@@ -1,6 +1,6 @@
 package com.example2;
 
-public class Connection {
+public abstract class Connection {
     FamilyMember src;
     FamilyMember dest;
     Relationship relationship;
@@ -11,7 +11,7 @@ public class Connection {
         relationship = re;
     }
 
-    public Relationship getRelationship() {
+    public abstract Relationship getRelationship() {
         return relationship;
     }
 
